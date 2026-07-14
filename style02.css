@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Fondo sutil azulado como el de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contact-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+/* TITULO DE FORM*/
+.contact-card h2 {
+    text-align: center;
+    color: #1e2d3d;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.form-group {
+    margin-bottom: 18px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    background-color: #f8fafc;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.form-group textarea {
+    height: 120px;
+    resize: none; 
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3b82f6;
+    background-color: #fff;
+}
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #22c55e; /* Verde vibrante de la imagen */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(34, 197, 94, 0.2);
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 25px;
+}
+.btn-submit:hover {
+    background-color: #16a34a; /* Tono un poco más oscuro al pasar el cursor */
+}
+.btn-submit:active {
+    transform: scale(0.98); /* Pequeño efecto de pulsación */
+}
